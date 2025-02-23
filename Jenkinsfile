@@ -47,12 +47,13 @@ pipeline {
             }
 
         }
-      
-        stage('Build Pipeline Deploy Project') {
+
+        stage('Build Pipleline Deploy') {
 
             steps {
 
-                 build wait: false, job: 'pipleline-deploy-java'
+                build wait: false, job: 'pipeline-deploy-java'
+
             }
 
         }
